@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Всем чатам чат</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="screen join-screen active">
+        <div class="form">
+          <h2>Зайти в чат</h2>
+          <div class="form-input">
+            <label>Псевдоним</label>
+            <input type="text" id="username" />
+          </div>
+          <div class="form-input">
+            <button id="join-user">Войти</button>
+          </div>
+        </div>
+      </div>
+      <div class="screen chat-screen">
+        <div class="header">
+          <div class="logo">Комната чата</div>
+          <button id="exit-chat">Покинуть</button>
+        </div>
+        <div class="messages">
+          <!-- Для отображения сообщений -->
+        </div>
+        <div class="typebox">
+          <input type="text" id="message-input" />
+          <button id="send-message">Отправить</button>
+        </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
