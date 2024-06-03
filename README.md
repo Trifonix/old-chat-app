@@ -9,9 +9,9 @@
 
 ### Для тестирования:
 
-git clone ?
+git clone https://github.com/Trifonix/old-chat-app.git
 
-cd ?
+cd old-chat-app
 
 npm i
 
